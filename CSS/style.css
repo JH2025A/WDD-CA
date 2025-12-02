@@ -574,7 +574,7 @@ body {
 	 background-color:white;
 	 font-family:Helvetica Neue, Arial;
 }
-
+/*CSS for flip card https://www.w3schools.com/howto/howto_css_flip_card.asp */
 /*Creates the animation behind the funfact flip card*/
 .funFactJH{
 	background-color:transparent;
@@ -652,10 +652,7 @@ body {
 	
 }
 
-.row{
-	width:100%;
-}
-
+.
 .infoJH{
 	margin-bottom:10%;
 }
@@ -663,5 +660,13 @@ body {
 	height:10rem;
 	width:16rem;
 	margin-bottom:10%;
+}
+.hrJH{
+	color:black;
+	height:2px;
+}
+.subHeadingsJH{
+	text-decoration:underline; /*W3Schools, text-decoration https://www.w3schools.com/cssref/pr_text_text-decoration.php*/
+	
 }
 /*end of Ireland & Quiz page*/
