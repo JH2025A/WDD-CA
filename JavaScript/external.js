@@ -126,11 +126,11 @@ function resetErrorsL() {
 }
 //next two functions for smaller screens
 function submitButtonS(){
-	let answerA=0;
-	let answerB=0;
-	let answerC=0;
-	let answerD=0;
-	let answerE=0;
+	var answerA=0;
+	var answerB=0;
+	var answerC=0;
+	var answerD=0;
+	var answerE=0;
 	const chosen1 = document.getElementById("1q").value;
 	const chosen2 = document.getElementById("2q").value;
 	const chosen3 = document.getElementById("3q").value;
@@ -347,12 +347,110 @@ function submitButtonS(){
 		alert(answerC);
 		alert(answerD);
 		alert(answerE);
-		alert("Form submitted successfully!");
+		var highestAnswer="";
+		if (answerA>answerB){
+			highestAnswer="answerA";
+			if (answerA>answerC){
+				if(answerA>answerD){
+					if (answerA>answerE){
+						alert(highestAnswer);
+					}
+					else{
+						highestAnswer="answerE"
+						alert(highestAnswer)
+					}
+				}
+				else{
+					highestAnswer="answerD";
+					if (answerD>answerE){
+						alert(highestAnswer);
+					}
+					else{
+						highestAnswer="answerE"
+						alert(highestAnswer)
+					}
+				}
+			}
+			else{
+				highestAnswer="answerC";
+				if (answerC>answerD){
+					if (answerC>answerE){
+						alert(highestAnswer);
+					}
+					else{
+						highestAnswer="answerE"
+						alert(highestAnswer)
+					}
+				}
+				else{
+					highestAnswer="answerD";
+					if (answerD>answerE){
+						alert(highestAnswer);
+					}
+					else{
+						highestAnswer="answerE"
+						alert(highestAnswer)
+					}
+				}
+			}
+		}
+		else{
+			highestAnswer="answerB";
+			if (answerB>answerC){
+				if (answerB>answerD){
+					if (answerB>answerE){
+						alert(highestAnswer);
+					}
+					else{
+						highestAnswer="answerE";
+						alert(highestAnswer);
+					}
+				}
+				else{
+					highestAnswer="answerD"
+					if (answerD>answerE){
+						alert(highestAnswer);
+					}
+					else{
+						highestAnswer="answerE";
+						alert(highestAnswer);
+					}
+				}
+			}
+			else{
+				highestAnswer="answerC";
+				if (answerC>answerD){
+					if (answerC>answerE){
+						alert(highestAnswer);
+					}
+					else{
+						highestAnswer="answerE"
+						alert(highestAnswer);
+					}
+				}
+				else{
+					highestAnswer="answerD";
+					if (answerD>answerE){
+						alert(highestAnswer);
+						
+					}
+					else{
+						highestAnswer="answerE";
+						alert(highestAnswer);
+					}
+				}
+			}
+		}
+		
+		
+		alert("Form submitted successfully");
+		
 		return true;
 	} else {
 		return false; 
 	}
-
+	/* Code for hide and show: https://www.w3schools.com/css/css_display_visibility.asp */
+	
 }
 function resetErrorsS() {
 	document.getElementById("q1Error").textContent = "";
@@ -364,4 +462,7 @@ function resetErrorsS() {
 	document.getElementById("q7Error").textContent = "";
 	document.getElementById("q8Error").textContent = "";
 	document.getElementById("q9Error").textContent = "";
+}
+function displayResultsJH{
+	document.getElementById(highestAnswer).style.display = "block";
 }

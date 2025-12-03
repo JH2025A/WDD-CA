@@ -669,4 +669,19 @@ body {
 	text-decoration:underline; /*W3Schools, text-decoration https://www.w3schools.com/cssref/pr_text_text-decoration.php*/
 	
 }
+#answerA{
+	display:none;
+}
+#answerB{
+	display:none;
+}
+#answerC{
+	display:none;
+}
+#answerD{
+	display:none;
+}
+#answerE{
+	display:none;
+}
 /*end of Ireland & Quiz page*/
