@@ -641,36 +641,36 @@ body {
 	text-align:center;
 	margin-top:2%;
 }
+/*to center my main heading on my page*/
 .h3JH{
 	margin-top:0%;
 	text-align:center;
 }
 
-//sets the width and height arround the flip-cards
+/*sets the width and height arround the flip-cards*/
 .areaJH{
 	height:11rem;
 	width:16rem;
 	
 }
 
-.
+/*style for the paragraphs that contain the information */
 .infoJH{
 	margin-bottom:10%;
 }
+/*sets the width and height arround the flip-cards on a smaller screen*/
 .sAreaJH{
 	height:11rem;
 	width:16rem;
 	margin-bottom:10%;
 	margin-left:6rem;
 }
-.hrJH{
-	color:black;
-	height:2px;
-}
+/*Underlines my subheadings making them easier to find for users*/
 .subHeadingsJH{
 	text-decoration:underline; /*W3Schools, text-decoration https://www.w3schools.com/cssref/pr_text_text-decoration.php*/
 	
 }
+/*styling for drop down questions on smaller quiz*/
 .formQJH{
 	width:90%;
 	text-align:center;

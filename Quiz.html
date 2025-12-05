@@ -2,22 +2,22 @@
 <html lang="en">
 	<head>
 		<!--got key meta attributes that were needed from powerpoint provided by Emer Thurnbury and from the sample code she provided.-->
-		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"/>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="author" content="Jessica Hall">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="keywords" content="suststainability, sustainability goals, ocean, ocean life, biodiversity, sustainability project, fun facts, easy to understand">
 		<meta name="description" content="Learn all about how Ireland is taking part in achieving the aims set out in Life Below Water/Sustainable Development Goal 14. Explaing what targets Ireland has agreed to achieve, explaing the progress Ireland's making towards achieving these targets and more interesting facts.">
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="robots" content="index, follow">
 		<meta name="language" content="English">
-		<title>Ireland and Life Below Water- How does Ireland fit in with SDG 14?</title>
+		<title>Life Below Water Quiz - How much do you know about SDG 14? Try this quiz to find out</title>
 		<link rel="stylesheet" href="CSS/style.css">
 		<link rel="icon" type="image/x-icon" href="Images/earth-favicon.jpg">
 		<!--Photo by Pixabay: https://www.pexels.com/photo/earth-illustration-355935/ -->
 	</head>
 	<body id="irelandJH" class="bodyJH">
+		<!--Navbar was created by OJ-->
 		<nav class="navbar bg-body-tertiary fixed-top">
 			<div class="container-fluid">
 				<div>
@@ -31,11 +31,11 @@
 					</div>
 					<style>.ra-button {padding: .3em .9em; border-radius: .25em; background: linear-gradient(#fff, #efefef); box-shadow: 0 1px .2em gray; display: inline-flex; align-items: center; cursor: pointer;} .ra-button svg {height: 1em; margin: 0 .5em 0 0;}</style>
 					<div id="ra-player" data-skin="https://assets.readaloudwidget.com/embed/skins/default"><div class="ra-button" onclick="readAloud(document.getElementById('ra-audio'), document.getElementById('ra-player'))"><svg viewBox="0 0 80 100"><polygon points="80,50 0,100 0,0 80,50" fill="#484848"/></svg> Listen to this article</div></div>
+					
 					<audio id="ra-audio" data-lang="en-IE" data-voice="free" data-key="c5a9f8cb8288b498291ab0c35a23e5f0"></audio>
 					<script>function readAloud(e,n){var s="https://assets.readaloudwidget.com/embed/",t=(/iPad|iPhone|iPod/.test(navigator.userAgent)&&(e.src=s+"sound/silence.mp3",e.play(),"undefined"!=typeof speechSynthesis&&speechSynthesis.speak(new SpeechSynthesisUtterance(" "))),document.createElement("script"));t.onload=function(){readAloudInit(e,n)},t.src=s+"js/readaloud.min.js",document.head.appendChild(t)}</script>
 					<div class="offcanvas-body">
 						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-						   </li>
 						  <li class="nav-item">
 								<a class="nav-link" href="About.html">About</a>
 						  </li>
@@ -43,9 +43,8 @@
 								<a class="nav-link" href="Ireland.html">Ireland and Life Below Water</a>
 						  </li>
 						  <li class="nav-item">
-								<a class="nav-link" href="Acc">Life Below Water Accross the World</a>
+								<a class="nav-link" href="accross the world.html">Life Below Water Accross the World</a>
 						  </li>
-						   </li>
 						  <li class="nav-item">
 								<a class="nav-link" href="FoodIndustry.html">The Food Industry and Life Below Water</a>
 						  </li>
@@ -55,12 +54,11 @@
 						  <li class="nav-item">
 								<a class="nav-link" href="how to make a difference.html">How To Make A Difference</a>
 						  </li>
-						   </li>
 						  <li class="nav-item">
 								<a class="nav-link active" aria-current="page"  href="Quiz.html">Life Below Water Quiz</a>
 						  </li>
 						  <li class="nav-item">
-								<a class="nav-link" href="Find Out More.html">Find Out More</a>
+								<a class="nav-link" href="FindOutMore.html">Find Out More</a>
 						  </li>
 						</ul>
 					</div>
@@ -88,43 +86,43 @@
 						<div class="col"><!--bootstrap column-->
 							<b>What number goal is this?</b><br>
 							<span id="q1-ErrorJH" class="error-messageJH"></span><br>
-							<input type= "radio" id="op1AJH" class="q1JH" name="q1"/>
+							<input type= "radio" id="op1AJH" class="q1JH" name="q1">
 							<label for="op1AJH">16</label><br>
-							<input type= "radio" id="op1BJH" class="q1JH" name="q1"/>
+							<input type= "radio" id="op1BJH" class="q1JH" name="q1">
 							<label for="op1BJH">4 </label><br>
-							<input type= "radio" id="op1CJH" class= "q1JH" name="q1"/>
+							<input type= "radio" id="op1CJH" class= "q1JH" name="q1">
 							<label for="op1CJH">1</label><br>
-							<input type= "radio" id="op1DJH" class= "correctJH q1JH" name="q1"/>
+							<input type= "radio" id="op1DJH" class= "correctJH q1JH" name="q1">
 							<label for="op1DJH">14</label><br>
-							<input type= "radio" id="op1EJH" class= "q1JH" name="q1"/>
+							<input type= "radio" id="op1EJH" class= "q1JH" name="q1">
 							<label for="op1EJH">6</label><br>
 						</div>
 						<div class="col">
 							<b>When do we aim to have successfully achieved these goals? </b><br>
 							<span id="q2-ErrorJH" class="error-messageJH"></span><br>
-							<input type= "radio" id="op2AJH" class= "correctJH q2JH" name="q2"/>
+							<input type= "radio" id="op2AJH" class= "correctJH q2JH" name="q2">
 							<label for="op2AJH">2030</label><br>
-							<input type= "radio" id="op2BJH" class= "q2JH " name="q2"/>
+							<input type= "radio" id="op2BJH" class= "q2JH " name="q2">
 							<label for="op2BJH">3020</label><br>
-							<input type= "radio" id="op2CJH"  class= "q2JH" name="q2"/>
+							<input type= "radio" id="op2CJH"  class= "q2JH" name="q2">
 							<label for="op2CJH">2035</label><br>
-							<input type= "radio" id="op2DJH"  class= "q2JH" name="q2"/>
+							<input type= "radio" id="op2DJH"  class= "q2JH" name="q2">
 							<label for="op2DJH">never</label><br>
-							<input type= "radio" id="op2EJH"  class= "q2JH" name="q2"/>
+							<input type= "radio" id="op2EJH"  class= "q2JH" name="q2">
 							<label for="op2EJH">1230</label><br>
 						</div>
 						<div class="col">
 							<b>Which of the following isn't a problem caused by overfishing?</b><br>
 							<span id="q3-ErrorJH" class="error-messageJH"></span><br>
-							<input type= "radio" id="op3AJH" class= "q3JH" name="q3"/>
+							<input type= "radio" id="op3AJH" class= "q3JH" name="q3">
 							<label for="op3AJH">Depletes a valuable source of food</label><br>
-							<input type= "radio" id="op3BJH" class= "q3JH" name="q3"/>
+							<input type= "radio" id="op3BJH" class= "q3JH" name="q3">
 							<label for="op3BJH">Extinction of species</label><br>
-							<input type= "radio" id="op3CJH" class= "correctJH q3JH" name="q3"/>
+							<input type= "radio" id="op3CJH" class= "correctJH q3JH" name="q3">
 							<label for="op3CJH">Too many fish are in the ocean</label><br>
-							<input type= "radio" id="op3DJH" class= "q3JH" name="q3"/>
+							<input type= "radio" id="op3DJH" class= "q3JH" name="q3">
 							<label for="op3DJH">Destruction of environment</label><br>
-							<input type= "radio" id="op3EJH" class= "q3JH" name="q3"/>
+							<input type= "radio" id="op3EJH" class= "q3JH" name="q3">
 							<label for="op3EJH">Causes low biodiversity</label><br>
 						</div>
 					</div>
@@ -133,43 +131,43 @@
 						<div class="col">
 							<b>Which of the following isn't a maritime animal that can be found in Ireland</b><br>
 							<span id="q4-ErrorJH" class="error-messageJH"></span><br>
-							<input type= "radio" id="op4AJH" class= "q4JH" name="q4"/>
+							<input type= "radio" id="op4AJH" class= "q4JH" name="q4">
 							<label for="op4AJH">Grey Seals</label><br>
-							<input type= "radio" id="op4BJH" class= "q4JH" name="q4"/>
+							<input type= "radio" id="op4BJH" class= "q4JH" name="q4">
 							<label for="op4BJH">Fin Whales</label><br>
-							<input type= "radio" id="op4CJH" class= "q4JH" name="q4"/>
+							<input type= "radio" id="op4CJH" class= "q4JH" name="q4">
 							<label for="op4CJH">Otters</label><br>
-							<input type= "radio" id="op4DJH" class= "correctJH q4JH" name="q4"/>
+							<input type= "radio" id="op4DJH" class= "correctJH q4JH" name="q4">
 							<label for="op4DJH">Loch Ness Monster</label><br>
-							<input type= "radio" id="op4EJH" class= "q4JH" name="q4"/>
+							<input type= "radio" id="op4EJH" class= "q4JH" name="q4">
 							<label for="op4EJH">Common Dolphins</label><br>
 						</div>
 						<div class="col">
 							<b>How many countries have agreed to take part in achieving these goals?</b><br>
 							<span id="q5-ErrorJH" class="error-messageJH"></span><br>
-							<input type= "radio" id="op5AJH" class= "correctJH q5JH" name="q5"/>
+							<input type= "radio" id="op5AJH" class= "correctJH q5JH" name="q5">
 							<label for="op5AJH">193</label><br>
-							<input type= "radio" id="op5BJH" class= "q5JH" name="q5"/>
+							<input type= "radio" id="op5BJH" class= "q5JH" name="q5">
 							<label for="op5BJH">150</label><br>
-							<input type= "radio" id="op5CJH" class= "q5JH" name="q5"/>
+							<input type= "radio" id="op5CJH" class= "q5JH" name="q5">
 							<label for="op5CJH">200</label><br>
-							<input type= "radio" id="op5DJH" class= "q5JH" name="q5"/>
+							<input type= "radio" id="op5DJH" class= "q5JH" name="q5">
 							<label for="op5DJH">50</label><br>
-							<input type= "radio" id="op5EJH" class= "q5JH" name="q5"/>
+							<input type= "radio" id="op5EJH" class= "q5JH" name="q5">
 							<label for="op5EJH">12</label><br>
 						</div>
 						<div class="col">
 							<b>How many of the targets set out in the SDG's are about Life Below Water</b><br>
 							<span id="q6-ErrorJH" class="error-messageJH"></span><br>
-							<input type= "radio" id="op6AJH" class= "correctJH q6JH" name="q6"/>
+							<input type= "radio" id="op6AJH" class= "correctJH q6JH" name="q6">
 							<label for="op6AJH">10</label><br>
-							<input type= "radio" id="op6BJH" class= "q6JH" name="q6"/>
+							<input type= "radio" id="op6BJH" class= "q6JH" name="q6">
 							<label for="op6BJH">12</label><br>
-							<input type= "radio" id="op6CJH" class= "q6JH" name="q6"/>
+							<input type= "radio" id="op6CJH" class= "q6JH" name="q6">
 							<label for="op6CJH">50</label><br>
-							<input type= "radio" id="op6DJH" class= "q6JH" name="q6"/>
+							<input type= "radio" id="op6DJH" class= "q6JH" name="q6">
 							<label for="op6DJH">20</label><br>
-							<input type= "radio" id="op6EJH" class= "q6JH" name="q6"/>
+							<input type= "radio" id="op6EJH" class= "q6JH" name="q6">
 							<label for="op6EJH">6</label><br>
 						</div>
 						<br>
@@ -189,9 +187,9 @@
 								<option value="">Choose Your Answer</option>
 								<option  value="a" class= "q1JH">16</option>
 								<option value="b" class= "q1JH">1</option>
-								<option value="c"class= "q1JH">4</option>
+								<option value="c" class= "q1JH">4</option>
 								<option value="d" class= "correctJH q1JH">14</option>
-								<option value="e"class= "q1JH" >6</option>
+								<option value="e" class= "q1JH" >6</option>
 							</select>
 							<br>
 						</div>
