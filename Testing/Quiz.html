@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Life Below Water Quiz</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"/>
+		<meta name="author" content="Jessica Hall">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="suststainability, sustainability goals, ocean, ocean life, biodiversity,"><!--add more-->
+
+		<title>Website Name</title><!--fix once name has been decided-->
+		<link rel="stylesheet" href="CSS/style.css">
+		
+	</head>
+	<body id="irelandJH" class="bodyJH">
+		<nav class="navbar bg-body-tertiary fixed-top">
+			<div class="container-fluid">
+				<div>
+					<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">Menu </button>
+				</div>
+				<h2 class="one">Life Below Water</h2>
+				<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+						  <li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#">Home</a>
+						  </li>
+						  <li class="nav-item">
+								<a class="nav-link" href="#">Link</a>
+						  </li>
+						  <li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								  Dropdown
+								</a>
+								<ul class="dropdown-menu">
+								  <li><a class="dropdown-item" href="#">Action</a></li>
+								  <li><a class="dropdown-item" href="#">Another action</a></li>
+								  <li>
+										<hr class="dropdown-divider">
+								  </li>
+								  <li><a class="dropdown-item" href="#">Something else here</a></li>
+								</ul>
+						  </li>
+						</ul>
+						<form class="d-flex mt-3" role="search">
+						 
+					
+						</form>
+					</div>
+				</div>
+			</div>
+		</nav> 
+		<div class="container text-center">
+		<!--Bootstap code is from the following is from:
+			breakpoints:https://getbootstrap.com/docs/5.3/layout/breakpoints/
+			containers:https://getbootstrap.com/docs/5.3/layout/containers/
+			grids:https://getbootstrap.com/docs/5.3/layout/grid/
+			columns:https://getbootstrap.com/docs/5.3/layout/columns/
+			display property:https://getbootstrap.com/docs/5.3/utilities/display/#hiding-elements
+		-->
+			<div class="row">
+				<h3 class="h3JH">Life Below Water Quiz</h3>
+			</div>
+			<div class="row">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		
+			<div class=" d-none d-sm-block"><!--d=display, none= don't display, d-sm, larger than display small, show-->
+				<form class="quizJH" onsubmit="return submitButtonL()" onreset="resetErrorsL()"><!--this class styles the form-->
+					<div class="row"><!--bootstrap row-->
+						<div class="col"><!--bootstrap column-->
+							<b>Question 1</b><br>
+							<span id="q1-error" class="error-message"></span><br>
+							<input type= "radio" id="op1A" class="answerA answer q1" name="q1"/>
+							<label for="op1A">answer a</label><br>
+							<input type= "radio" id="op1B" class="answerB answer q1" name="q1"/>
+							<label for="op1B">answer b</label><br>
+							<input type= "radio" id="op1C" class= "answerC answer q1" name="q1"/>
+							<label for="op1C">answer c</label><br>
+							<input type= "radio" id="op1D" class= "answerD answer q1" name="q1"/>
+							<label for="op1D">answer d</label><br>
+							<input type= "radio" id="op1E" class= "answerE answer q1" name="q1"/>
+							<label for="op1E">answer e</label><br>
+						</div>
+						<div class="col">
+							<b>Question 2</b><br>
+							<span id="q2-error" class="error-message"></span><br>
+							<input type= "radio" id="op2A" class= "answerA answer q2" name="q2"/>
+							<label for="op2A">answer a</label><br>
+							<input type= "radio" id="op2B" class= "answerB answer q2 " name="q2"/>
+							<label for="op2B">answer b</label><br>
+							<input type= "radio" id="op2C"  class= "answerC answer q2" name="q2"/>
+							<label for="op2C">answer c</label><br>
+							<input type= "radio" id="op2D"  class= "answerD answer q2" name="q2"/>
+							<label for="op2D">answer d</label><br>
+							<input type= "radio" id="op2E"  class= "answerE answer q2" name="q2"/>
+							<label for="op2E">answer e</label><br>
+						</div>
+						<div class="col">
+							<b>Question 3</b><br>
+							<span id="q3-error" class="error-message"></span><br>
+							<input type= "radio" id="op3A" class= "answerA answer q3" name="q3"/>
+							<label for="op3A">answer a</label><br>
+							<input type= "radio" id="op3B" class= "answerB  answer q3" name="q3"/>
+							<label for="op3B">answer b</label><br>
+							<input type= "radio" id="op3C" class= "answerC answer q3" name="q3"/>
+							<label for="op3C">answer c</label><br>
+							<input type= "radio" id="op3D" class= "answerD answer q3"name="q3"/>
+							<label for="op3D">answer d</label><br>
+							<input type= "radio" id="op3E" class= "answerE answer q3" name="q3"/>
+							<label for="op3E">answer e</label><br>
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col">
+							<b>Question 4</b><br>
+							<span id="q4-error" class="error-message"></span><br>
+							<input type= "radio" id="op4A" class= "answerA answer q4" value="a" name="q4"/>
+							<label for="op4A">answer a</label><br>
+							<input type= "radio" id="op4B" class= "answerB answer q4" value= "b"name="q4"/>
+							<label for="op4B">answer b</label><br>
+							<input type= "radio" id="op4C" class= "answerC answer q4" value= "c" name="q4"/>
+							<label for="op4C">answer c</label><br>
+							<input type= "radio" id="op4D" class= "answerD answer q4" name="q4"/>
+							<label for="op4D">answer d</label><br>
+							<input type= "radio" id="op4E" class= "answerE answer q4" name="q4"/>
+							<label for="op4E">answer e</label><br>
+						</div>
+						<div class="col">
+							<b>Question 5</b><br>
+							<span id="q5-error" class="error-message"></span><br>
+							<input type= "radio" id="op5A" class= "answerA answer q5" value="a" name="q5"/>
+							<label for="op5A">answer a</label><br>
+							<input type= "radio" id="op5B" class= "answerB answer q5" value= "b"name="q5"/>
+							<label for="op5B">answer b</label><br>
+							<input type= "radio" id="op5C" class= "answerC answer q5" value= "c" name="q5"/>
+							<label for="op5C">answer c</label><br>
+							<input type= "radio" id="op5D" class= "answerD answer q5" name="q5"/>
+							<label for="op5D">answer d</label><br>
+							<input type= "radio" id="op5E" class= "answerE answer q5" name="q5"/>
+							<label for="op5E">answer d</label><br>
+						</div>
+						<div class="col">
+							<b>Question 6</b><br>
+							<span id="q6-error" class="error-message"></span><br>
+							<input type= "radio" id="op6A" class= "answerA answer q6" name="q6"/>
+							<label for="op6A">answer a</label><br>
+							<input type= "radio" id="op6B" class= "answerB answer q6" name="q6"/>
+							<label for="op6B">answer b</label><br>
+							<input type= "radio" id="op6C" class= "answerC answer q6" name="q6"/>
+							<label for="op6C">answer c</label><br>
+							<input type= "radio" id="op6D" class= "answerD answer q6" name="q6"/>
+							<label for="op6D">answer d</label><br>
+							<input type= "radio" id="op6E" class= "answerE answer q6" name="q6"/>
+							<label for="op6E">answer e</label><br>
+						</div>
+						<br>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col">
+							<b>Question 7</b><br>
+							<span id="q7-error" class="error-message"></span><br>
+							<input type= "radio" id="op7A"  class= "answerA answer q7" value="a" name="q7"/>
+							<label for="op7A">answer a</label><br>
+							<input type= "radio" id="op7B" class= "answerB answer q7" value="b" name="q7"/>
+							<label for="op7B">answer b</label><br>
+							<input type= "radio" id="op7C" class= "answerC answer q7" value="c" name="q7"/>
+							<label for="op7C">answer c</label><br>
+							<input type= "radio" id="op7D" class= "answerD answer q7" value="b" name="q7"/>
+							<label for="op7D">answer d</label><br>
+							<input type= "radio" id="op7E" class= "answerE answer q7" value="c" name="q7"/>
+							<label for="op7E">answer e</label><br>
+						</div>
+						<div class="col">
+							<b>Question 8</b><br>
+							<span id="q8-error" class="error-message"></span><br>
+							<input type= "radio" id="op8A" class= "answerA answer q8" value="a" name="q8"/>
+							<label for="op8A">answer a</label><br>
+							<input type= "radio" id="op8B" class= "answerB answer q8" value="b" name="q8"/>
+							<label for="op8B">answer b</label><br>
+							<input type= "radio" id="op8C" class= "answerC answer q8" value="c" name="q8"/>
+							<label for="op8C">answer c</label><br>
+							<input type= "radio" id="op8D" class= "answerD answer q8" value="d" name="q8"/>
+							<label for="op8D">answer d</label><br>
+							<input type= "radio" id="op8E" class= "answerE answer q8" value="e" name="q8"/>
+							<label for="op8E">answer e</label><br>
+						</div>
+						<div class="col">
+							<b>Question 9</b><br>
+							<span id="q9-error" class="error-message"></span><br>
+							<input type= "radio" id="op9A" class= "answerA answer q9" value="a" name="q9"/>
+							<label for="op9A">answer a</label><br>
+							<input type= "radio" id="op9B" class= "answerB answer q9" value="b" name="q9"/>
+							<label for="op9B">answer b</label><br>
+							<input type= "radio" id="op9C" class= "answerC answer q9" value="c" name="q9"/>
+							<label for="op9C">answer c</label><br>
+							<input type= "radio" id="op9D" class= "answerD answer q9" value="d" name="q9"/>
+							<label for="op9D">answer d</label><br>
+							<input type= "radio" id="op9E" class= "answerE answer q9" value="e" name="q9"/>
+							<label for="op9E">answer e</label><br>
+						</div>
+					</div>
+					<div class="quizSubmitJH">
+						<button type="submit">Submit</button>
+						<button type="reset">Reset</button>
+					</div>
+				</form>
+			</div>
+			<div class=" d-sm-none d-block"><!--d=display, none= don't display, d-sm, larger than display small, block = show-->
+				<form class="quizJH" name= "quizForm" onsubmit="return submitButtonS()" onreset="resetErrorsS()">
+					
+						<div class="row">
+							<label for="1q">Question 1</label>
+							<select id="1q">
+								<option value="">Choose Your Answer</option>
+								<option  value="a" class= "answerA answer q1">answer a</option>
+								<option value="b" class= "answerB answer q1">answer b</option>
+								<option value="c"class= "answerC answer q1" >answer c</option>
+								<option value="d" class= "answerD answer q1">answer d</option>
+								<option value="e"class= "answerE answer q1" >answer e</option>
+							</select>
+							<span id="q1Error" class="error-message"></span><br>
+						</div>
+						<div class="row">
+							<label for="2q">Question 2</label>
+							<select id="2q">
+								<option value="">Choose Your Answer</option>
+								<option  value="a" class= "answerA answer q2">answer a</option>
+								<option value="b" class= "answerB answer q2">answer b</option>
+								<option value="c" class= "answerC answer q2" >answer c</option>
+								<option value="d" class= "answerD answer q2">answer d</option>
+								<option value="e" class= "answerE answer q2" >answer e</option>
+							</select>
+							<span id="q2Error" class="error-message"></span><br>
+						</div>
+						<div class="row">
+							<label for="3q">Question 3</label><br>
+							<select id="3q">
+								<option value="">Choose Your Answer</option>
+								<option value="a" class= "answerA answer q3">answer a</option>
+								<option value="b" class= "answerB answer q3" >answer b</option>
+								<option value="c" class= "answerC answer q3">answer c</option>
+								<option value="d" class= "answerD answer q3" >answer d</option>
+								<option value="e" class= "answerE answer q3">answer e</option>
+							</select>
+							<span id="q3Error" class="error-message"></span><br>
+						</div>
+						<div class="row">
+							<label for="4q">Question 4</label><br>
+							<select id="4q">
+								<option value="">Choose Your Answer</option>
+								<option value="a"  class= "answerA answer q4">answer a</option>
+								<option value="b" class= "answerB answer q4">answer b</option>
+								<option value="c" class= "answerC answer q4">answer c</option>
+								<option  value="d" class= "answerD answer q4">answer d</option>
+								<option value="e" class= "answerE answer q4">answer e</option>
+							</select>
+							<span id="q4Error" class="error-message"></span><br>
+						</div>
+						<div class="row">
+							<label for="5q">Question 5</label><br>
+							<select id="5q">
+								<option value="">Choose Your Answer</option>
+								<option value="a" class= "answerA answer q5">answer a</option>
+								<option value="b" class= "answerB answer q5">answer b</option>
+								<option value="c" class= "answerC answer q5">answer c</option>
+								<option value="d" class= "answerD answer q5">answer d</option>
+								<option value="e" class= "answerE answer q5">answer e</option>
+							</select>
+							<span id="q5Error" class="error-message"></span><br>
+						</div>
+						<div class="row">
+							<label for="6q">Question 6</label><br>
+							<select id="6q">
+								<option value="">Choose Your Answer</option>
+								<option value="a" class= "answerA answer q6">answer a</option>
+								<option value="b" class= "answerB answer q6">answer b</option>
+								<option value="c" class= "answerC answer q6">answer c</option>
+								<option value="d" class= "answerD answer q6">answer d</option>
+								<option value="e" class= "answerE answer q6">answer e</option>
+							</select>
+							<span id="q6Error" class="error-message"></span><br>
+						</div>
+						<div class="row">
+							<label for="7q">Question 7</label><br>
+							<select id="7q">
+								<option value="">Choose Your Answer</option>
+								<option value="a" class= "answerA answer q7">answer a</option>
+								<option value="b" class= "answerB answer q7">answer b</option>
+								<option value="c" class= "answerC answer q7">answer c</option>
+								<option value="d" class= "answerD answer q7">answer d</option>
+								<option value="e" class= "answerE answer q7">answer e</option>
+							</select>
+							<span id="q7Error" class="error-message"></span><br>
+						</div>
+						<div class="row">
+							<label for="8q">Question 8</label><br>
+							<select id="8q">
+								<option value="">Choose Your Answer</option>
+								<option  value="a" class= "answerA answer q8">answer a</option>
+								<option value="b" class= "answerB answer q8">answer b</option>
+								<option value="c" class= "answerC answer q8">answer c</option>
+								<option value="d" class= "answerD answer q8">answer d</option>
+								<option value="e" class= "answerE answer q8">answer e</option>
+							</select>
+							<span id="q8Error" class="error-message"></span><br>
+						</div>
+						<div class="row">
+							<label for="9q" >Question 9</label><br>
+							<select id="9q">
+								<option value="">Choose Your Answer</option>
+								<option value="a"  class= "answerA answer q9">answer a</option>
+								<option value="b"  class= "answerB answer q9">answer b</option>
+								<option value="c"  class= "answerC answer q9">answer c</option>
+								<option value="d"  class= "answerD answer q9">answer d</option>
+								<option  value="e" class= "answerE answer q9">answer e</option>
+							</select>
+							<span id="q9Error" class="error-message"></span><br>
+						</div>
+					<div class="row">	
+						<div class="quizSubmitJH" onclick="displayResultsJH()">
+							<button type="submit">Submit</button>
+							<button type="reset">Reset</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="row">
+				<div class="col-3 d-none d-sm-block">
+				
+				</div>
+				<div class="col">
+					<div id="answerA">
+						<img id="answerA" src="#" alt="answerA">
+					</div>
+					<div id="answerB">
+						<img id="answerB" src="#" alt="answerB">
+					</div>
+					<div id="answerC">
+						<img id="answerC" src="#" alt="answerC">
+					</div>
+					<div id="answerD">
+						<img id="answerD" src="#" alt="answerD">
+					</div>
+					<div id="answerE">
+						<img id="answerE" src="#" alt="answerE">
+					</div>
+				</div>
+				<div class="col-3 d-none d-sm-block">
+				
+				</div>
+			</div>
+		</div>
+		<script src="JavaScript/external.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+	</body>
+</html>

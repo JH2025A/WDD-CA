@@ -3,13 +3,12 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Life Below Water Quiz</title>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"/>
 		<meta name="author" content="Jessica Hall">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="keywords" content="suststainability, sustainability goals, ocean, ocean life, biodiversity,"><!--add more-->
 
-		<title>Website Name</title><!--fix once name has been decided-->
+		<title>Life Below Water</title><!--fix once name has been decided-->
 		<link rel="stylesheet" href="CSS/style.css">
 		
 	</head>
@@ -25,36 +24,44 @@
 						<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
 						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 					</div>
+					<style>.ra-button {padding: .3em .9em; border-radius: .25em; background: linear-gradient(#fff, #efefef); box-shadow: 0 1px .2em gray; display: inline-flex; align-items: center; cursor: pointer;} .ra-button svg {height: 1em; margin: 0 .5em 0 0;}</style>
+					<div id="ra-player" data-skin="https://assets.readaloudwidget.com/embed/skins/default"><div class="ra-button" onclick="readAloud(document.getElementById('ra-audio'), document.getElementById('ra-player'))"><svg viewBox="0 0 80 100"><polygon points="80,50 0,100 0,0 80,50" fill="#484848"/></svg> Listen to this article</div></div>
+					<audio id="ra-audio" data-lang="en-IE" data-voice="free" data-key="c5a9f8cb8288b498291ab0c35a23e5f0"></audio>
+					<script>function readAloud(e,n){var s="https://assets.readaloudwidget.com/embed/",t=(/iPad|iPhone|iPod/.test(navigator.userAgent)&&(e.src=s+"sound/silence.mp3",e.play(),"undefined"!=typeof speechSynthesis&&speechSynthesis.speak(new SpeechSynthesisUtterance(" "))),document.createElement("script"));t.onload=function(){readAloudInit(e,n)},t.src=s+"js/readaloud.min.js",document.head.appendChild(t)}</script>
 					<div class="offcanvas-body">
 						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+						   </li>
 						  <li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="#">Home</a>
+								<a class="nav-link" href="About.html">About</a>
 						  </li>
 						  <li class="nav-item">
-								<a class="nav-link" href="#">Link</a>
+								<a class="nav-link" href="Ireland.html">Ireland and Life Below Water</a>
 						  </li>
-						  <li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								  Dropdown
-								</a>
-								<ul class="dropdown-menu">
-								  <li><a class="dropdown-item" href="#">Action</a></li>
-								  <li><a class="dropdown-item" href="#">Another action</a></li>
-								  <li>
-										<hr class="dropdown-divider">
-								  </li>
-								  <li><a class="dropdown-item" href="#">Something else here</a></li>
-								</ul>
+						  <li class="nav-item">
+								<a class="nav-link" href="Acc">Life Below Water Accross the World</a>
+						  </li>
+						   </li>
+						  <li class="nav-item">
+								<a class="nav-link" href="FoodIndustry.html">The Food Industry and Life Below Water</a>
+						  </li>
+						  <li class="nav-item">
+								<a class="nav-link"  href="HowToGetInContact.html">How To Get In Contact</a>
+						  </li>
+						  <li class="nav-item">
+								<a class="nav-link" href="how to make a difference.html">How To Make A Difference</a>
+						  </li>
+						   </li>
+						  <li class="nav-item">
+								<a class="nav-link active" aria-current="page"  href="Quiz.html">Life Below Water Quiz</a>
+						  </li>
+						  <li class="nav-item">
+								<a class="nav-link" href="Find Out More.html">Find Out More</a>
 						  </li>
 						</ul>
-						<form class="d-flex mt-3" role="search">
-						 
-					
-						</form>
 					</div>
 				</div>
 			</div>
-		</nav> 
+		</nav>
 		<div class="container text-center">
 		<!--Bootstap code is from the following is from:
 			breakpoints:https://getbootstrap.com/docs/5.3/layout/breakpoints/
@@ -67,145 +74,100 @@
 				<h3 class="h3JH">Life Below Water Quiz</h3>
 			</div>
 			<div class="row">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>You've read through our pages and we hope you've learned loads about Life Under Water. If you feel like testing your knowledge, why not give the quiz below a go?</p>
 			</div>
 		
 			<div class=" d-none d-sm-block"><!--d=display, none= don't display, d-sm, larger than display small, show-->
 				<form class="quizJH" onsubmit="return submitButtonL()" onreset="resetErrorsL()"><!--this class styles the form-->
 					<div class="row"><!--bootstrap row-->
 						<div class="col"><!--bootstrap column-->
-							<b>Question 1</b><br>
-							<span id="q1-error" class="error-message"></span><br>
-							<input type= "radio" id="op1A" class="answerA answer q1" name="q1"/>
-							<label for="op1A">answer a</label><br>
-							<input type= "radio" id="op1B" class="answerB answer q1" name="q1"/>
-							<label for="op1B">answer b</label><br>
-							<input type= "radio" id="op1C" class= "answerC answer q1" name="q1"/>
-							<label for="op1C">answer c</label><br>
-							<input type= "radio" id="op1D" class= "answerD answer q1" name="q1"/>
-							<label for="op1D">answer d</label><br>
-							<input type= "radio" id="op1E" class= "answerE answer q1" name="q1"/>
-							<label for="op1E">answer e</label><br>
+							<b>What number goal is this?</b><br>
+							<span id="q1-ErrorJH" class="error-messageJH"></span><br>
+							<input type= "radio" id="op1AJH" class="q1JH" name="q1"/>
+							<label for="op1AJH">16</label><br>
+							<input type= "radio" id="op1BJH" class="q1JH" name="q1"/>
+							<label for="op1BJH">4 </label><br>
+							<input type= "radio" id="op1CJH" class= "q1JH" name="q1"/>
+							<label for="op1CJH">1</label><br>
+							<input type= "radio" id="op1DJH" class= "correctJH q1JH" name="q1"/>
+							<label for="op1DJH">14</label><br>
+							<input type= "radio" id="op1EJH" class= "q1JH" name="q1"/>
+							<label for="op1EJH">6</label><br>
 						</div>
 						<div class="col">
-							<b>Question 2</b><br>
-							<span id="q2-error" class="error-message"></span><br>
-							<input type= "radio" id="op2A" class= "answerA answer q2" name="q2"/>
-							<label for="op2A">answer a</label><br>
-							<input type= "radio" id="op2B" class= "answerB answer q2 " name="q2"/>
-							<label for="op2B">answer b</label><br>
-							<input type= "radio" id="op2C"  class= "answerC answer q2" name="q2"/>
-							<label for="op2C">answer c</label><br>
-							<input type= "radio" id="op2D"  class= "answerD answer q2" name="q2"/>
-							<label for="op2D">answer d</label><br>
-							<input type= "radio" id="op2E"  class= "answerE answer q2" name="q2"/>
-							<label for="op2E">answer e</label><br>
+							<b>When do we aim to have successfully achieved these goals? </b><br>
+							<span id="q2-ErrorJH" class="error-messageJH"></span><br>
+							<input type= "radio" id="op2AJH" class= "correctJH q2JH" name="q2"/>
+							<label for="op2AJH">2030</label><br>
+							<input type= "radio" id="op2BJH" class= "q2JH " name="q2"/>
+							<label for="op2BJH">3020</label><br>
+							<input type= "radio" id="op2CJH"  class= "q2JH" name="q2"/>
+							<label for="op2CJH">2035</label><br>
+							<input type= "radio" id="op2DJH"  class= "q2JH" name="q2"/>
+							<label for="op2DJH">never</label><br>
+							<input type= "radio" id="op2EJH"  class= "q2JH" name="q2"/>
+							<label for="op2EJH">1230</label><br>
 						</div>
 						<div class="col">
-							<b>Question 3</b><br>
-							<span id="q3-error" class="error-message"></span><br>
-							<input type= "radio" id="op3A" class= "answerA answer q3" name="q3"/>
-							<label for="op3A">answer a</label><br>
-							<input type= "radio" id="op3B" class= "answerB  answer q3" name="q3"/>
-							<label for="op3B">answer b</label><br>
-							<input type= "radio" id="op3C" class= "answerC answer q3" name="q3"/>
-							<label for="op3C">answer c</label><br>
-							<input type= "radio" id="op3D" class= "answerD answer q3"name="q3"/>
-							<label for="op3D">answer d</label><br>
-							<input type= "radio" id="op3E" class= "answerE answer q3" name="q3"/>
-							<label for="op3E">answer e</label><br>
+							<b>Which of the following isn't a problem with overfishing?</b><br>
+							<span id="q3-ErrorJH" class="error-messageJH"></span><br>
+							<input type= "radio" id="op3AJH" class= "q3JH" name="q3"/>
+							<label for="op3AJH">Depletes a valuable source of food</label><br>
+							<input type= "radio" id="op3BJH" class= "q3JH" name="q3"/>
+							<label for="op3BJH">Extinction of species</label><br>
+							<input type= "radio" id="op3CJH" class= "correctJH q3JH" name="q3"/>
+							<label for="op3CJH">There will be too many fish</label><br>
+							<input type= "radio" id="op3DJH" class= "q3JH" name="q3"/>
+							<label for="op3DJH">Destruction of environment</label><br>
+							<input type= "radio" id="op3EJH" class= "q3JH" name="q3"/>
+							<label for="op3EJH">Causes low biodiversity</label><br>
 						</div>
 					</div>
 					<br>
 					<div class="row">
 						<div class="col">
-							<b>Question 4</b><br>
-							<span id="q4-error" class="error-message"></span><br>
-							<input type= "radio" id="op4A" class= "answerA answer q4" value="a" name="q4"/>
-							<label for="op4A">answer a</label><br>
-							<input type= "radio" id="op4B" class= "answerB answer q4" value= "b"name="q4"/>
-							<label for="op4B">answer b</label><br>
-							<input type= "radio" id="op4C" class= "answerC answer q4" value= "c" name="q4"/>
-							<label for="op4C">answer c</label><br>
-							<input type= "radio" id="op4D" class= "answerD answer q4" name="q4"/>
-							<label for="op4D">answer d</label><br>
-							<input type= "radio" id="op4E" class= "answerE answer q4" name="q4"/>
-							<label for="op4E">answer e</label><br>
+							<b>Which of the following isn't a maritime animal that can be found in Ireland</b><br>
+							<span id="q4-ErrorJH" class="error-messageJH"></span><br>
+							<input type= "radio" id="op4AJH" class= "q4JH" name="q4"/>
+							<label for="op4AJH">Grey Seals</label><br>
+							<input type= "radio" id="op4BJH" class= "q4JH" name="q4"/>
+							<label for="op4BJH">Fin Whales</label><br>
+							<input type= "radio" id="op4CJH" class= "q4JH" name="q4"/>
+							<label for="op4CJH">Otters</label><br>
+							<input type= "radio" id="op4DJH" class= "correctJH q4JH" name="q4"/>
+							<label for="op4DJH">Loch Ness Monster</label><br>
+							<input type= "radio" id="op4EJH" class= "q4JH" name="q4"/>
+							<label for="op4EJH">Common Dolphins</label><br>
 						</div>
 						<div class="col">
-							<b>Question 5</b><br>
-							<span id="q5-error" class="error-message"></span><br>
-							<input type= "radio" id="op5A" class= "answerA answer q5" value="a" name="q5"/>
-							<label for="op5A">answer a</label><br>
-							<input type= "radio" id="op5B" class= "answerB answer q5" value= "b"name="q5"/>
-							<label for="op5B">answer b</label><br>
-							<input type= "radio" id="op5C" class= "answerC answer q5" value= "c" name="q5"/>
-							<label for="op5C">answer c</label><br>
-							<input type= "radio" id="op5D" class= "answerD answer q5" name="q5"/>
-							<label for="op5D">answer d</label><br>
-							<input type= "radio" id="op5E" class= "answerE answer q5" name="q5"/>
-							<label for="op5E">answer d</label><br>
+							<b>How many countries have agreed to take part in achieving these goals?</b><br>
+							<span id="q5-ErrorJH" class="error-messageJH"></span><br>
+							<input type= "radio" id="op5AJH" class= "correctJH q5JH" name="q5"/>
+							<label for="op5AJH">193</label><br>
+							<input type= "radio" id="op5BJH" class= "q5JH" name="q5"/>
+							<label for="op5BJH">150</label><br>
+							<input type= "radio" id="op5CJH" class= "q5JH" name="q5"/>
+							<label for="op5CJH">200</label><br>
+							<input type= "radio" id="op5DJH" class= "q5JH" name="q5"/>
+							<label for="op5DJH">50</label><br>
+							<input type= "radio" id="op5EJH" class= "q5JH" name="q5"/>
+							<label for="op5EJH">12</label><br>
 						</div>
 						<div class="col">
-							<b>Question 6</b><br>
-							<span id="q6-error" class="error-message"></span><br>
-							<input type= "radio" id="op6A" class= "answerA answer q6" name="q6"/>
-							<label for="op6A">answer a</label><br>
-							<input type= "radio" id="op6B" class= "answerB answer q6" name="q6"/>
-							<label for="op6B">answer b</label><br>
-							<input type= "radio" id="op6C" class= "answerC answer q6" name="q6"/>
-							<label for="op6C">answer c</label><br>
-							<input type= "radio" id="op6D" class= "answerD answer q6" name="q6"/>
-							<label for="op6D">answer d</label><br>
-							<input type= "radio" id="op6E" class= "answerE answer q6" name="q6"/>
-							<label for="op6E">answer e</label><br>
+							<b>How many of the targets set out in the SDG's are about Life Below Water</b><br>
+							<span id="q6-ErrorJH" class="error-messageJH"></span><br>
+							<input type= "radio" id="op6AJH" class= "correctJH q6JH" name="q6"/>
+							<label for="op6AJH">10</label><br>
+							<input type= "radio" id="op6BJH" class= "q6JH" name="q6"/>
+							<label for="op6BJH">12</label><br>
+							<input type= "radio" id="op6CJH" class= "q6JH" name="q6"/>
+							<label for="op6CJH">50</label><br>
+							<input type= "radio" id="op6DJH" class= "q6JH" name="q6"/>
+							<label for="op6DJH">20</label><br>
+							<input type= "radio" id="op6EJH" class= "q6JH" name="q6"/>
+							<label for="op6EJH">6</label><br>
 						</div>
 						<br>
-					</div>
-					<br>
-					<div class="row">
-						<div class="col">
-							<b>Question 7</b><br>
-							<span id="q7-error" class="error-message"></span><br>
-							<input type= "radio" id="op7A"  class= "answerA answer q7" value="a" name="q7"/>
-							<label for="op7A">answer a</label><br>
-							<input type= "radio" id="op7B" class= "answerB answer q7" value="b" name="q7"/>
-							<label for="op7B">answer b</label><br>
-							<input type= "radio" id="op7C" class= "answerC answer q7" value="c" name="q7"/>
-							<label for="op7C">answer c</label><br>
-							<input type= "radio" id="op7D" class= "answerD answer q7" value="b" name="q7"/>
-							<label for="op7D">answer d</label><br>
-							<input type= "radio" id="op7E" class= "answerE answer q7" value="c" name="q7"/>
-							<label for="op7E">answer e</label><br>
-						</div>
-						<div class="col">
-							<b>Question 8</b><br>
-							<span id="q8-error" class="error-message"></span><br>
-							<input type= "radio" id="op8A" class= "answerA answer q8" value="a" name="q8"/>
-							<label for="op8A">answer a</label><br>
-							<input type= "radio" id="op8B" class= "answerB answer q8" value="b" name="q8"/>
-							<label for="op8B">answer b</label><br>
-							<input type= "radio" id="op8C" class= "answerC answer q8" value="c" name="q8"/>
-							<label for="op8C">answer c</label><br>
-							<input type= "radio" id="op8D" class= "answerD answer q8" value="d" name="q8"/>
-							<label for="op8D">answer d</label><br>
-							<input type= "radio" id="op8E" class= "answerE answer q8" value="e" name="q8"/>
-							<label for="op8E">answer e</label><br>
-						</div>
-						<div class="col">
-							<b>Question 9</b><br>
-							<span id="q9-error" class="error-message"></span><br>
-							<input type= "radio" id="op9A" class= "answerA answer q9" value="a" name="q9"/>
-							<label for="op9A">answer a</label><br>
-							<input type= "radio" id="op9B" class= "answerB answer q9" value="b" name="q9"/>
-							<label for="op9B">answer b</label><br>
-							<input type= "radio" id="op9C" class= "answerC answer q9" value="c" name="q9"/>
-							<label for="op9C">answer c</label><br>
-							<input type= "radio" id="op9D" class= "answerD answer q9" value="d" name="q9"/>
-							<label for="op9D">answer d</label><br>
-							<input type= "radio" id="op9E" class= "answerE answer q9" value="e" name="q9"/>
-							<label for="op9E">answer e</label><br>
-						</div>
 					</div>
 					<div class="quizSubmitJH">
 						<button type="submit">Submit</button>
@@ -214,148 +176,91 @@
 				</form>
 			</div>
 			<div class=" d-sm-none d-block"><!--d=display, none= don't display, d-sm, larger than display small, block = show-->
-				<form class="quizJH" name= "quizForm" onsubmit="return submitButtonS()" onreset="resetErrorsS()">
-					
+				<form class="quizJH" name= "quizForm" onsubmit="return submitButtonSJH()" onreset="resetErrorsSJH()">	
 						<div class="row">
-							<label for="1q">Question 1</label>
-							<select id="1q">
+							<label for="1qJH">Q1. What number goal is this?</label>
+							<span id="q1ErrorJH" class="error-messageJH"></span><br>
+							<select class="formQJH" id="1qJH">
 								<option value="">Choose Your Answer</option>
-								<option  value="a" class= "answerA answer q1">answer a</option>
-								<option value="b" class= "answerB answer q1">answer b</option>
-								<option value="c"class= "answerC answer q1" >answer c</option>
-								<option value="d" class= "answerD answer q1">answer d</option>
-								<option value="e"class= "answerE answer q1" >answer e</option>
+								<option  value="a" class= "q1JH">16</option>
+								<option value="b" class= "q1JH">1</option>
+								<option value="c"class= "q1JH">4</option>
+								<option value="d" class= "correctJH q1JH">14</option>
+								<option value="e"class= "q1JH" >6</option>
 							</select>
-							<span id="q1Error" class="error-message"></span><br>
+							<br>
 						</div>
 						<div class="row">
-							<label for="2q">Question 2</label>
-							<select id="2q">
+							<label for="2qJH">Q2. When do we aim to have successfully achieved these goals</label>
+							<span id="q2ErrorJH" class="error-messageJH"></span><br>
+							<select class="formQJH" id="2qJH">
 								<option value="">Choose Your Answer</option>
-								<option  value="a" class= "answerA answer q2">answer a</option>
-								<option value="b" class= "answerB answer q2">answer b</option>
-								<option value="c" class= "answerC answer q2" >answer c</option>
-								<option value="d" class= "answerD answer q2">answer d</option>
-								<option value="e" class= "answerE answer q2" >answer e</option>
+								<option  value="a" class= "correctJH q2JH">2030</option>
+								<option value="b" class= "q2JH">3020</option>
+								<option value="c" class= "q2JH" >2035</option>
+								<option value="d" class= "q2JH">never</option>
+								<option value="e" class= "q2JH" >1230 </option>
 							</select>
-							<span id="q2Error" class="error-message"></span><br>
+							<br>
 						</div>
 						<div class="row">
-							<label for="3q">Question 3</label><br>
-							<select id="3q">
+							<label for="3qJH">Q3. Which of the following isn't a problem with overfishing?</label>
+							<span id="q3ErrorJH" class="error-messageJH"></span><br>
+							<select class="formQJH" id="3qJH">
 								<option value="">Choose Your Answer</option>
-								<option value="a" class= "answerA answer q3">answer a</option>
-								<option value="b" class= "answerB answer q3" >answer b</option>
-								<option value="c" class= "answerC answer q3">answer c</option>
-								<option value="d" class= "answerD answer q3" >answer d</option>
-								<option value="e" class= "answerE answer q3">answer e</option>
+								<option value="a" class= "q3JH">Depletes a valuable source of food</option>
+								<option value="b" class= "q3JH" >Extinction of species</option>
+								<option value="c" class= "correctJH q3JH">There will be too many fish</option>
+								<option value="d" class= "q3JH" >Destruction of environment</option>
+								<option value="e" class= "q3JH">Causes low biodiversity</option>
 							</select>
-							<span id="q3Error" class="error-message"></span><br>
+							<br>
 						</div>
 						<div class="row">
-							<label for="4q">Question 4</label><br>
-							<select id="4q">
+							<label for="4qJH">Q4. Which of the following isn't a maritime animal that can be found  in Ireland?</label>
+							<span id="q4ErrorJH" class="error-messageJH"></span><br>
+							<select class="formQJH" id="4qJH">
 								<option value="">Choose Your Answer</option>
-								<option value="a"  class= "answerA answer q4">answer a</option>
-								<option value="b" class= "answerB answer q4">answer b</option>
-								<option value="c" class= "answerC answer q4">answer c</option>
-								<option  value="d" class= "answerD answer q4">answer d</option>
-								<option value="e" class= "answerE answer q4">answer e</option>
+								<option value="a"  class= "q4JH">Grey Seals</option>
+								<option value="b" class= "qJH">Fin Whales</option>
+								<option value="c" class= "q4JH">Otters</option>
+								<option  value="d" class=  " correctJH q4JH">Loch Ness Monster</option>
+								<option value="e" class= "q4JH">Common Dolphins</option>
 							</select>
-							<span id="q4Error" class="error-message"></span><br>
+							<br>
 						</div>
 						<div class="row">
-							<label for="5q">Question 5</label><br>
-							<select id="5q">
+							<label for="5qJH">Q5. How many countries have agreed to take part in achieving these goals?</label>
+							<span id="q5ErrorJH" class="error-messageJH"></span><br>
+							<select class="formQJH" id="5qJH">
 								<option value="">Choose Your Answer</option>
-								<option value="a" class= "answerA answer q5">answer a</option>
-								<option value="b" class= "answerB answer q5">answer b</option>
-								<option value="c" class= "answerC answer q5">answer c</option>
-								<option value="d" class= "answerD answer q5">answer d</option>
-								<option value="e" class= "answerE answer q5">answer e</option>
+								<option value="a" class= "correctJH q5JH">193</option>
+								<option value="b" class= "q5JH">150</option>
+								<option value="c" class= "q5JH">200</option>
+								<option value="d" class= "q5JH">50</option>
+								<option value="e" class= "q5JH">12</option>
 							</select>
-							<span id="q5Error" class="error-message"></span><br>
+							<br>
 						</div>
 						<div class="row">
-							<label for="6q">Question 6</label><br>
-							<select id="6q">
+							<label for="6qJH">Q6. How many of the targets set out in the SDG's  are about Life Below Water?</label>
+							<span id="q6ErrorJH" class="error-messageJH"></span><br>
+							<select class="formQJH" id="6qJH">
 								<option value="">Choose Your Answer</option>
-								<option value="a" class= "answerA answer q6">answer a</option>
-								<option value="b" class= "answerB answer q6">answer b</option>
-								<option value="c" class= "answerC answer q6">answer c</option>
-								<option value="d" class= "answerD answer q6">answer d</option>
-								<option value="e" class= "answerE answer q6">answer e</option>
+								<option value="a" class= "correctJH q6JH">10</option>
+								<option value="b" class= "q6JH">12</option>
+								<option value="c" class= "q6JH">50</option>
+								<option value="d" class= "q6JH">20</option>
+								<option value="e" class= "q6JH">6</option>
 							</select>
-							<span id="q6Error" class="error-message"></span><br>
+							<br>
 						</div>
-						<div class="row">
-							<label for="7q">Question 7</label><br>
-							<select id="7q">
-								<option value="">Choose Your Answer</option>
-								<option value="a" class= "answerA answer q7">answer a</option>
-								<option value="b" class= "answerB answer q7">answer b</option>
-								<option value="c" class= "answerC answer q7">answer c</option>
-								<option value="d" class= "answerD answer q7">answer d</option>
-								<option value="e" class= "answerE answer q7">answer e</option>
-							</select>
-							<span id="q7Error" class="error-message"></span><br>
-						</div>
-						<div class="row">
-							<label for="8q">Question 8</label><br>
-							<select id="8q">
-								<option value="">Choose Your Answer</option>
-								<option  value="a" class= "answerA answer q8">answer a</option>
-								<option value="b" class= "answerB answer q8">answer b</option>
-								<option value="c" class= "answerC answer q8">answer c</option>
-								<option value="d" class= "answerD answer q8">answer d</option>
-								<option value="e" class= "answerE answer q8">answer e</option>
-							</select>
-							<span id="q8Error" class="error-message"></span><br>
-						</div>
-						<div class="row">
-							<label for="9q" >Question 9</label><br>
-							<select id="9q">
-								<option value="">Choose Your Answer</option>
-								<option value="a"  class= "answerA answer q9">answer a</option>
-								<option value="b"  class= "answerB answer q9">answer b</option>
-								<option value="c"  class= "answerC answer q9">answer c</option>
-								<option value="d"  class= "answerD answer q9">answer d</option>
-								<option  value="e" class= "answerE answer q9">answer e</option>
-							</select>
-							<span id="q9Error" class="error-message"></span><br>
-						</div>
-					<div class="row">	
-						<div class="quizSubmitJH" onclick="displayResultsJH()">
+						<div class="quizSubmitJH">
 							<button type="submit">Submit</button>
 							<button type="reset">Reset</button>
 						</div>
-					</div>
+						
 				</form>
-			</div>
-			<div class="row">
-				<div class="col-3 d-none d-sm-block">
-				
-				</div>
-				<div class="col">
-					<div id="answerA">
-						<img id="answerA" src="#" alt="answerA">
-					</div>
-					<div id="answerB">
-						<img id="answerB" src="#" alt="answerB">
-					</div>
-					<div id="answerC">
-						<img id="answerC" src="#" alt="answerC">
-					</div>
-					<div id="answerD">
-						<img id="answerD" src="#" alt="answerD">
-					</div>
-					<div id="answerE">
-						<img id="answerE" src="#" alt="answerE">
-					</div>
-				</div>
-				<div class="col-3 d-none d-sm-block">
-				
-				</div>
 			</div>
 		</div>
 		<script src="JavaScript/external.js"></script>
