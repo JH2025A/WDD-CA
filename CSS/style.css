@@ -571,7 +571,7 @@ body {
 
 .bodyJH{
 	 padding-top: 80px;
-	 background-color:white;
+	 background-color:#f3ebcd;
 	 font-family:Helvetica Neue, Arial;
 }
 /*CSS for flip card https://www.w3schools.com/howto/howto_css_flip_card.asp */
@@ -595,6 +595,7 @@ body {
 
 	
 }
+//sets it to flip when you hover over it
 .funFactJH:hover .funFactInnerJH{
 	transform:rotateY(180deg);
 }
@@ -610,7 +611,7 @@ body {
 	color:black;
 }
 .funFactBackJH{
-	background-color:#2980b9;
+	background-color:lightblue;
 	color:black;
 	transform:rotateY(180deg);
 	
@@ -645,7 +646,7 @@ body {
 	text-align:center;
 }
 
-
+//sets the width and height arround the flip-cards
 .areaJH{
 	height:11rem;
 	width:16rem;
@@ -669,5 +670,13 @@ body {
 	text-decoration:underline; /*W3Schools, text-decoration https://www.w3schools.com/cssref/pr_text_text-decoration.php*/
 	
 }
-
+.formQJH{
+	width:90%;
+	text-align:center;
+	margin-left:5%;
+	margin-right:5%;
+}
+.error-messageJH{
+	color:red;
+}
 /*end of Ireland & Quiz page*/
